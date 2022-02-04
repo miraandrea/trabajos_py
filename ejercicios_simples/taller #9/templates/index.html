@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>inicio</title>
+</head>
+<body>
+    <h1>Menu</h1>
+
+    <a href="/agregar"> Agregar un ususario </a><br>
+    <a href="/inicio">Iniciar seccion</a><br>
+    <a href="/eliminar">Eliminas usuario</a><br>
+    <a href="/mostrar">Mostrar los usuario </a><br>
+    <a href="/buscar">Buscar un usuario </a><br>
+
+    <p>{{ini}} </p>
+    <p>{{se1}} </p>
+    <h3>{{a1}}</h3>
+    {% for dato in lista1 %}
+    <p>{{dato}}</p>
+    {% endfor %}
+
+    <h3>{{b2}}</h3>
+    {% for dato1 in lista2 %}
+    <p>{{dato1}}</p>
+    {% endfor %}
+</body>
+</html>

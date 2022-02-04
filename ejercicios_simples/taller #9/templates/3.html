@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar</title>
+</head>
+<body>
+
+    <h1>Eliminar usuario y contraseña</h1>
+
+    <form action="/eliminar/post" method="POST">
+        <p>ingrese sus datos para poder eliminar</p>
+        <input name="usuario" type="text" placeholder="Usuario"/>
+        <input name="contraseña" type="text" placeholder="Contraseña"/>
+        <p>Nombre del usuario que quiere eliminar</p>
+        <input name="nombre" type="text" placeholder="Nombre del usuario"/>
+
+        <input type="submit" value="eliminar"/>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>1 pregunta</title>
+</head>
+<body>
+    <p><font-family:calabrin>1. Determinar si un alumno aprueba a reprueba un curso</font-family:calabrin></p><br>
+    <from action="/primero/post" method ="POST">
+        <input name="calificacion1" type="text" placeholder="primera calificacion"/>
+        <input name="calificacion2" type="text" placeholder="segunda calificacion"/>
+        <input name="calificacion3" type="text" placeholder="tercera calificacion"/>
+        <input name="calificacion4" type="text" placeholder="cuarta calificacion"/>
+
+        <input type= "submit" value = "resultado"/>
+        <p>{{valoroperacion}}</p>
+
+        {% if valoroperacion >= 3.5 %}
+            <p>abrobo </p>
+        {% else %}
+            <p>rebrobo </p>
+        {% endif %}
+    </from>
+    <p>volver al <a href= "/">menu</a></p>
+</body>
+</html>

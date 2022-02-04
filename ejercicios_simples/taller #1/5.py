@@ -1,0 +1,6 @@
+print ("puntaje final de los postulantes")
+correctas= int (input ("ingrese la respuesta correcta "))
+incorrecta= int (input ("ingrese la respuesta incorrecta"))
+blanco= int (input ("ingrese la respuesta blanco"))
+puntaje_final= (correctas+4-incorrecta)
+print ("su puntaje final es", puntaje_final)

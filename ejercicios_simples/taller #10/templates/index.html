@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+    <title>veterinaria</title>
+    
+</head>
+<body>
+    <div id="principal">
+        <header>
+            <img id="logo" src="../static/image/logo.png" alt="Logo veterinaria" width="100">
+            <nav>
+                <ul>
+                    <li><a href="/agregar"> Agregar un mascota </a><br></li>
+                    <li><a href="/consultar">Consultal telefono del propetario</a><br></li>
+                    <li><a href="/eliminar">Eliminas una mascota</a><br></li>
+                    <li><a href="/mostrar">Mostrar los datos</a><br></li>
+                </ul>
+            </nav>
+            <div class="clear"></div>
+        </header>
+        <h1>Consultorio</h1>
+        
+        <p>{{se1}} </p>
+        <p>{{m}}</p>
+        <p>{{n}}</p>
+        <p>{{m1}}</p>
+        <p>{{n1}}</p>
+        <p>{{m2}}</p>
+
+        <h4 id="lista2">{{m11}}</h4>
+        <h3 id="lista1">{{a1}}</h3>
+        {% for dato in lista1 %}
+        <p>{{dato}}</p>
+        {% endfor %}
+
+        <h4 id="lista2">{{n11}}</h4>
+        <h3 id="lista1">{{b2}}</h3>
+        {% for dato1 in lista2 %}
+        <p>{{dato1}}</p>
+        {% endfor %}
+
+        <h4 id="lista2">{{m12}}</h4>
+        <h3 id="lista1">{{c3}}</h3>
+        {% for dato2 in lista3 %}
+        <p>{{dato2}}</p>
+        {% endfor %}
+    </div>
+</body>
+</html>

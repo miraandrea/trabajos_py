@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inicio</title>
+</head>
+<body>
+    <h1>Hola</h1> 
+
+    <h2>suma</h2>
+
+    <form action="/suma/post" method="POST" >
+        <input name="numero1" type="text" placeholder="Este es el numero 1"/>
+        <input name="numero2" type="text" placeholder="Este es el numero 2"/>
+        
+        <input type="submit" value="Sumar"/>
+    </form>
+    <p>el valor de suma es: {{valorSuma}}</p> <br>
+    <h2>division</h2>
+    <form action="/division/post" method="POST" >
+        <input name="numero1" type="text" placeholder="Este es el numero 1"/>
+        <input name="numero2" type="text" placeholder="Este es el numero 2"/>
+        
+        <input type="submit" value="division"/>
+    </form>
+    <p>el valor de la division es: {{valordivision}}</p> <br>
+    <h>resta</h2>
+    <form action="/resta/post" method="POST" >
+        <input name="numero1" type="text" placeholder="Este es el numero 1"/>
+        <input name="numero2" type="text" placeholder="Este es el numero 2"/>
+        
+        <input type="submit" value="resta"/>
+    </form>
+    <p>el valor de la resta es: {{valorresta}}</p> <br>
+    <h2>multiplicacion</h2>
+    <form action="/multiplicacion/post" method="POST" >
+        <input name="numero1" type="text" placeholder="Este es el numero 1"/>
+        <input name="numero2" type="text" placeholder="Este es el numero 2"/>
+        
+        <input type="submit" value="multiplicacion"/>
+    </form>
+    <p>el valor de la multiplicacion es: {{valormultiplicacion}}</p> <br>
+
+</body>
+</html>

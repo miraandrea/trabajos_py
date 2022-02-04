@@ -1,0 +1,5 @@
+print ("planilla de empleados")
+hl= int (input ("ingrese las horas elaboradas"))
+th= int (input ("ingrese la tarifa por hora"))
+planilla = (hl*th)
+print ("planilla",planilla)

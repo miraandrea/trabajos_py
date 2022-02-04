@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>3 pregunta</title>
+</head>
+<body>
+    <p><font-family:calabrin>3. calcular su salario</font-family:calabrin></p>
+    <from action="/tercero/post" method ="POST">
+
+        <input name="horas" type="text" placeholder="horas elavoradas"/>
+
+        <input type= "submit" value = "pago"/>
+    </from>
+    <p> {{valorhoras}} </p>
+    <p> {{valorpago1}} </p>
+    <p>{{valorpago2}}</p>
+    {% if valorhoras > 40%}
+        <p>su pago es: {{valorpago2}} </p>
+    {% else %}
+        <p>su pago es: {{valorpago1}}</p>
+    {% endif %}
+    <p>volver al <a href= "/">menu</a></p>
+    
+</body>
+</html>

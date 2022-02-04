@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>2 pregunta</title>
+</head>
+<body>
+    <p><font-family:calabrin>2. para saber si es mayor de edad</font-family:calabrin></p>
+    <from action="/segundo/post" method ="POST">
+        
+        <input name= "edad" type="text" placeholder= "ingrese su edad"/>
+
+        <input type= "submit" value = "edad"/>
+    </from>
+    <p>{{valor}}</p>
+    {% if valor > 18 %}
+        <p>es mayor de edad</p>
+    {% endif %}
+    <p>volver al <a href= "/">menu</a></p>
+
+</body>
+</html>

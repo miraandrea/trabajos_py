@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='../static/css/1.css')}}">
+    <title>AGREGAR</title>
+</head>
+<body>
+    <div class="login-box">
+        <img src="../static/image/logo.png" class="avatar" alt="Avatar Image">
+        <h1>Agregar mascota</h1>
+
+        <form action="/agregar/post" method="POST">
+            <input name="mascota" type="text" placeholder="Nombre de la mascota"/>
+            <input name="propetario" type="text" placeholder="Nombre del dueño"/>
+            <input name="telefono" type="text" placeholder="El telefono"/>
+
+            <input type="submit" value="Agregar"/>
+        </form>
+        </form>
+    </div>
+</body>
+</html>
